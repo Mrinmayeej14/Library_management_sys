@@ -9,3 +9,7 @@ user_views = Blueprint('user_views', __name__)
 @user_views.route('/user_home')
 def user_home():
     return render_template('user_home.html')
+
+@user_views.route('/cart')
+def user_cart():
+    return render_template('cart.html')

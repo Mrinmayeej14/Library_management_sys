@@ -8,7 +8,10 @@ from app.models import db
 def create_app():
     app=Flask(__name__)   #create instance of app
     app.config['SECRET_KEY']='Meenu'
+
+    #current_dir=os.path.abspath(os.path.dirname(__file__))
     app.config['SQLALCHEMY_DATABASE_URI']='sqlite:///library.db'
+    #os.path.join(current_dir,"Database_LMS.sqlite3")
     db.init_app(app)
     app.app_context().push()
     

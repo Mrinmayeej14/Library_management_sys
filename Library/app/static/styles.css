@@ -1,0 +1,179 @@
+/* Navbar Styles */
+.navbar {
+    background-color: #fff; /* Set background color of the navbar to white */
+}
+
+.navicon {
+    color: black; /* Set color of icons within the navbar to black */
+    font-size: 24px; /* Set font size of icons within the navbar to 24px */
+}
+
+/* Search Form Styles */
+.search-form {
+    display: flex; /* Use flexbox for layout */
+    align-items: right; /* Align items to the right */
+    margin-left: auto; /* Auto margin on the left */
+    margin-right: 10px; /* Margin of 10px on the right */
+}
+
+/* Global Styles */
+* {
+    padding: 0; /* Reset padding for all elements */
+    margin: 0; /* Reset margin for all elements */
+}
+
+.float {
+    position: fixed; /* Set position of the floating action button to fixed */
+    width: 60px; /* Set width of the floating action button to 60px */
+    height: 60px; /* Set height of the floating action button to 60px */
+    bottom: 40px; /* Set distance from the bottom of the viewport to 40px */
+    right: 40px; /* Set distance from the right of the viewport to 40px */
+    background-color: black; /* Set background color of the floating action button to black */
+    color: #fff; /* Set text color of the floating action button to white */
+    border-radius: 50px; /* Set border radius to make the button circular */
+    text-align: center; /* Center align the text within the button */
+    box-shadow: 2px 2px 3px #999; /* Add box shadow for a subtle effect */
+    bottom: 55px; /* Adjust bottom position to 55px */
+}
+
+.my-float {
+    margin-top: 22px; /* Add margin to position the floating button icon */
+}
+
+/* Typography */
+h1 {
+    text-align: center; /* Center align <h1> elements */
+}
+
+.bold-text {
+    font-weight: bold; /* Set font weight to bold for elements with this class */
+}
+
+.italic-text {
+    font-style: italic; /* Set font style to italic for elements with this class */
+}
+
+.required-asterisk {
+    color: red; /* Set color of the asterisk to red */
+    margin-left: 2px; /* Add margin to the left of the asterisk */
+}
+
+.center-text {
+    text-align: center; /* Center align text */
+}
+
+/* Image Styles */
+.resized-image {
+    max-width: 200px; /* Set maximum width of images to 200px */
+    max-height: 150px; /* Set maximum height of images to 150px */
+    width: auto; /* Automatically adjust width */
+    height: auto; /* Automatically adjust height */
+}
+
+.inline-button {
+    display: inline-block; /* Display buttons inline */
+    margin-right: 10px; /* Add margin to the right of buttons */
+}
+
+/* Carousel Styles */
+.custom-carousel {
+    max-width: 100%; /* Set maximum width of carousels to 100% */
+}
+
+.custom-carousel-image {
+    width: 100%; /* Set width of carousel images to 100% */
+    height: 100%; /* Set height of carousel images to 100% */
+    object-fit: cover; /* Ensure images cover the entire area */
+}
+
+/* Form Styles */
+.quantity-form {
+    display: inline-block; /* Display quantity forms inline */
+    margin-right: 10px; /* Add margin to the right of quantity forms */
+}
+
+.quantity-value {
+    display: inline-block; /* Display quantity values inline */
+    width: 30px; /* Set width of quantity values to 30px */
+    text-align: center; /* Center align text */
+}
+
+/* Container and Background Styles */
+.image-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center align items horizontally */
+    align-items: center; /* Center align items vertically */
+    gap: 20px; /* Set gap between items to 20px */
+}
+
+.image-container img {
+    max-width: 100%; /* Set maximum width of images to 100% */
+    height: auto; /* Automatically adjust height */
+}
+
+.bg-image {
+    background-image: url('/static/background1.png'); /* Set background image */
+    background-size: cover; /* Scale background image to cover entire container */
+    height: 100vh; /* Set height to 100% of viewport height */
+}
+
+@media (orientation: portrait) {
+    .bg-image {
+        background-image: url('/static/mobilebackground.png'); /* Change background image for portrait orientation */
+    }
+}
+
+/* Body and Footer Styles */
+html {
+    height: 100%; /* Set height of HTML element to 100% */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+body {
+    position: relative; /* Set body position to relative */
+    margin: 0; /* Reset margin */
+    min-height: 100%; /* Set minimum height to 100% of viewport height */
+    padding-bottom: 6.74rem; /* Add padding to the bottom */
+    box-sizing: inherit; /* Inherit box-sizing from parent */
+    font-family: 'Century Gothic', sans-serif; /* Set font family */
+}
+
+.center-image {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center align items horizontally */
+    align-items: center; /* Center align items vertically */
+}
+
+.custom-card-footer {
+    background-color: white; /* Set background color of card footer to white */
+}
+
+footer {
+    background-color: #fff; /* Set background color of footer to white */
+    color: #fff; /* Set text color of footer to white */
+    text-align: center; /* Center align text within footer */
+    padding: 10px; /* Add padding */
+    position: absolute; /* Set footer position to absolute */
+    right: 0; /* Align footer to the right */
+    left: 0; /* Align footer to the left */
+    bottom: 0; /* Align footer to the bottom */
+}
+
+/* Navbar Brand Styles */
+.navbar-brand img {
+    max-height: 50px; /* Set maximum height of navbar brand logo to 50px */
+    margin-left: 20px; /* Add margin to the left of the logo */
+    margin-right: 1px; /* Add margin to the right of the logo */
+    padding-right: 1px; /* Add padding to the right of the logo */
+}
+
+/* Button Styles */
+.abutton {
+    color: white; /* Set text color of buttons to white */
+    font-size: 16px; /* Set font size of buttons to 16px */
+}
+
+/* Section Heading Styles */
+h3 {
+    background-color: rgb(255, 232, 235); /* Set background color of <h3> elements */
+}
