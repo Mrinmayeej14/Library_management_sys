@@ -2,19 +2,16 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 import os
 from os import path
-#from app.models import *
-from app.models import db
+from flask_login import LoginManager
+from app.models import db, User
 
 def create_app():
     app=Flask(__name__)   #create instance of app
     app.config['SECRET_KEY']='Meenu'
-
-    #current_dir=os.path.abspath(os.path.dirname(__file__))
     app.config['SQLALCHEMY_DATABASE_URI']='sqlite:///library.db'
-    #os.path.join(current_dir,"Database_LMS.sqlite3")
+
     db.init_app(app)
     app.app_context().push()
-    
 
     with app.app_context():
         if not path.exists('Library/instance/library.db'):
@@ -27,6 +24,12 @@ def create_app():
     app.register_blueprint(user_views, url_prefix='/')
     app.register_blueprint(auth, url_prefix='/')
 
-    
+    login_manager = LoginManager()
+    login_manager.login_view = 'auth.login'   
+    login_manager.init_app(app)    
+
+    @login_manager.user_loader
+    def load_user(user_id):
+        return User.query.get(int(user_id))
 
     return app

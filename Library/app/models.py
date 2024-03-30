@@ -21,6 +21,13 @@ class User(db.Model, UserMixin):
 
     def get_id(self):
         return int(self.user_id)
+    
+    def __init__(self, user_email, user_password, user_fname, user_lname, user_mobile):
+        self.user_email = user_email
+        self.user_password = bcrypt.generate_password_hash(user_password).decode('utf-8')
+        self.user_fname = user_fname
+        self.user_lname = user_lname
+        self.user_mobile = user_mobile
 
 class Admin(db.Model, UserMixin):
     __tablename__= "admin"
