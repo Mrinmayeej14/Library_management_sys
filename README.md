@@ -1,6 +1,7 @@
 Library Management System
 Overview
-The Library Management System is a multi-user application designed to streamline the management of books and user interactions within a library. It caters to two types of users: general users and administrators. The system provides a variety of features tailored to each user type, enhancing the overall library experience.
+The Library Management System is a multi-user application designed to streamline the management of books and user interactions within a library. It caters to two types of users: general users and administrators.
+The system provides a variety of features tailored to each user type, enhancing the overall library experience.
 
 Features
 
